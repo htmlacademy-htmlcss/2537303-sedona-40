@@ -1,8 +1,45 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face{
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
 body{
+  font-family: "PT  Sans" sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
   background-color: #F2F2F2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+main{
+  background-color:white;
 }
 .hero{
-  background-image: url('../images/hero_image.jpg');
+  background-image:url('../images/under_background_logo.png'), url('../images/hero_image.jpg');
   width: 1200;
   height: 485px;
   background-repeat: no-repeat;
@@ -19,4 +56,125 @@ body{
   width: 1200;
   height: 412;
   background-repeat: no-repeat;
+}
+.button{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #756157;
+}
+.page-header{
+  background-color: white;
+}
+.navigation-link{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.advantages > .advantages-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+.advantages > .advantages-description{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+.advantages-item{
+  background-color:#82B3D3;
+  width: 400px;
+  height: 385px;
+  text-align: center;
+  color: #333333;
+}
+.advantages-item-town{
+  color: white;
+}
+.advantages-item-bridge{
+  color: white;
+}
+.advantages-item h3{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-item-area{
+  background-color: rgba(130.52, 179.31, 211.18, 0.12);
+}
+.advantages-item-road{
+  background-color: rgba(130.52, 179.31, 211.18, 0.20);
+}
+.advantages-item-tourist{
+  background-color: rgba(130.52, 179.31, 211.18, 0.12);
+}
+.advantages-item-house{
+  background-color: rgba(130.52, 179.31, 211.18, 0.12);
+}
+.advantages-item-souvenirs{
+  background-color: rgba(130.52, 179.31, 211.18, 0.12);
+}
+.advantages-item-food{
+  background-color: white;
+}
+.search{
+  text-align: center;
+  background-color: white;
+}
+.search-title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.search-description{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+footer{
+  background-color: white;
+  text-align: center;
+}
+.newsletter-title{
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+}
+.newsletter-description{
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+}
+.inner-header-title{
+  font-size: 60px;
+  line-height: 78px;
+}
+.filter-item{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+}
+.control{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.catalog-hotel-search{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.select-control{
+  color:#333333;
 }
