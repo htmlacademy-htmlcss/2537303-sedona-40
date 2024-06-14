@@ -2,6 +2,7 @@
 
 * Студент: [Дима Липихин](https://up.htmlacademy.ru/htmlcss/40/user/2537303).
 * Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
+* Сайт: [Мой проект Седона](https://aleaart.github.io/2537303-sedona-40/)
 
 ---
 
