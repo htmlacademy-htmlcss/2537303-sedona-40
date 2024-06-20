@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+.html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT  Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -38,10 +46,20 @@ body {
   background-color: #F2F2F2;
   padding-left: 40px;
   padding-right: 40px;
+  width: 1200px;
+  height: auto;
 }
 
 .main-index {
   background-color: white;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .hero {
@@ -81,10 +99,66 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 270px;
+  margin-left: auto;
+}
+
 .navigation-link {
   color: #000000;
   text-decoration: none;
   font-weight: 700;
+}
+
+.page-container {
+  width: 1200px;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.advantages-sublist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-sublist-up {
+  width: 1200px;
+  height: 261px;
+  margin-bottom: 21px;
+}
+
+.advantages-sublist-down {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 246px;
+  border: 1px solid black;
 }
 
 .advantages-subtitle {
@@ -101,6 +175,7 @@ body {
   color: #333333;
   text-align: center;
 }
+
 
 .advantages-item {
   background-color: #82B3D3;
@@ -151,6 +226,12 @@ body {
 .search {
   text-align: center;
   background-color: #ffffff;
+  width: 1200px;
+  height: 406px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .search-title {
@@ -170,25 +251,102 @@ footer {
   text-align: center;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 415px;
+}
+
 .newsletter-title {
   font-size: 30px;
   line-height: 36px;
-  color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
+}
+
+.newsletter-title-homepage {
   color: #ffffff;
 }
 
-.social-contacts{
+.newsletter-description-homepage {
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  border: 1px solid black;
+  flex-direction: column;
+}
+
+.social-list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 1060px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid black;
+}
+
+.social-media {
+  margin:0;
+  padding:0;
+  display: flex;
+  width: 184px;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.social-item-image {
+  display: flex;
+  width: 157px;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 50px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  text-align:center;
   color: inherit;
   text-decoration: none;
+  border: 1px solid red;
 }
 
 .inner-header-title {
@@ -196,7 +354,7 @@ footer {
   line-height: 78px;
 }
 
-.main-inner{
+.main-inner {
   background-color: #ffffff;
 }
 
@@ -235,6 +393,7 @@ footer {
   border-radius: 4px;
   background-color: #ffffff;
 }
+
 .button-list {
   border: 2px #E5E5E5 solid;
   border-radius: 4px;
@@ -254,9 +413,11 @@ footer {
 .catalog-card-name {
   color: #333333;
 }
+
 .catalog-card-price {
   text-align: right;
-  color: #333333;;
+  color: #333333;
+  ;
 }
 
 .catalog-card-rating {
@@ -292,7 +453,8 @@ footer {
 }
 
 .pagination-item-current {
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
+  ;
 }
 
 .pagination-link-current {
@@ -304,13 +466,13 @@ footer {
 }
 
 .pagination-link-empty {
- color: #000000;
+  color: #000000;
 }
 
 .newsletter-title-catalog {
   color: #000000;
 }
 
-.newsletter-description-catalog{
+.newsletter-description-catalog {
   color: #333333;
 }
