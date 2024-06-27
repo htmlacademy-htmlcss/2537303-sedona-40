@@ -32,20 +32,18 @@
           <p><button class="button navigation-link-button" type="button">Хочу сюда!</button></p>
         </nav>
       </header>
-      <main class="main-index" data-test="main">
+      <main class="main-index main-container" data-test="main">
         <div class="page-main-container">
           <section class="hero" data-test="hero">
             <h1 class="visually-hidden" >Городок "Седона"</h1>
             <img class="hero-logo" src="images/hero_logo.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" width="458" height="352">
           </section>
             <section class="advantages">
-              <ul class="advantages-sublist advantages-sublist-up">
-                <li class="advantages-subitem advantages-subitem-up">
-                  <h2 class="advantages-subtitle">Седона — небольшой городок в Аризоне,
+              <div class="advantages-sublist advantages-sublist-up">
+                <h2 class="advantages-subtitle">Седона — небольшой городок в Аризоне,
                 заслуживающий большего!</h2>
-                  <p class="advantages-subdescription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-                </li>
-              </ul>
+                <p class="advantages-subdescription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+              </div>
               <h2 class="visually-hidden">Преимущества</h2>
               <ul class="advantages-list">
                 <li class="advantages-item advantages-item-town">
@@ -83,12 +81,10 @@
               </ul>
             </section>
             <section class="advantages">
-              <ul class="advantages-sublist advantages-sublist-down">
-                <li class="advantages-subitem">
+              <div class="advantages-sublist advantages-sublist-down">
                   <h2 class="advantages-subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
                   <p class="advantages-subdescription">Опытный персонал и качественное обслуживание!</p>
-              </li>
-              </ul>
+              </div>
                 <h2 class="visually-hidden">Преимущества</h2>
               <ul class="advantages-list">
                 <li class="advantages-item advantages-item-house">
@@ -123,10 +119,7 @@
               <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
             </section>
         </div>
-      </main>
-      <footer class="page-footer" data-test="footer">
-        <div class="page-footer-container">
-          <section class="newsletter newsletter-homepage" data-test="subscribe">
+        <section class="newsletter newsletter-homepage" data-test="subscribe">
             <h2 class="newsletter-title newsletter-title-homepage">Подпишитесь на Рассылку</h2>
             <p class="newsletter-description newsletter-description-homepage">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -134,6 +127,9 @@
               <p><button class="button newsletter-button" type="submit">Подписаться</button></p>
             </form>
           </section>
+      </main>
+      <footer class="page-footer" data-test="footer">
+        <div class="page-footer-container">
           <section class="social">
             <h2 class="visually-hidden">Контакты</h2>
           <ul class="social-list social-media-list">
@@ -155,15 +151,15 @@
                 <img class="vkontakte" src="images/youtube.svg" alt="YouTube" width="22" height="17">
               </a>
             </li>
-            <li class="social-item ">
-              <a class="social-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </li>
-            <li class="social-item social-item-image">
-              <img class="logo-academy" src="images/logo_academy.svg" alt="Логотип HTML Academy" width="115" height="33">
-            </li>
           </ul>
+            <div class="contacts">
+              <a class="contacts-item" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </div>
+            <div class="logo-academy">
+              <img class="logo-academy-footer" src="images/logo_academy.svg" alt="Логотип HTML Academy" width="115" height="33">
+            </div>
           </section>
-      </div>
+        </div>
       </footer>
     </div>
   </body>
