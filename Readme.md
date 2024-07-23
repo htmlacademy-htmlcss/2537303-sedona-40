@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дима Липихин](https://up.htmlacademy.ru/htmlcss/40/user/2537303).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
+* Сайт: [Мой проект Седона](https://dmitriylipikhin.github.io/2537303-sedona-40/)
 
 ---
 
