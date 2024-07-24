@@ -60,7 +60,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   position: relative;
   background-color: #808080;
 }
